@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
-import {Avatar, Badge, Icon, withBadge} from 'react-native-elements';
+import {Badge} from 'react-native-elements';
 
 const Card = props => {
   return (
@@ -39,23 +39,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 8,
     paddingHorizontal: 16,
-    // backgroundColor: 'red',
   },
   cardTileRaw: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 8,
-    // backgroundColor: 'blue',
   },
   cardValueRaw: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 8,
-    // backgroundColor: 'green',
   },
   cardFooterRaw: {
     flex: 1,
@@ -69,15 +64,18 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 24,
     fontWeight: '600',
+    fontFamily: 'Cairo-Regular',
   },
   label: {
     color: '#FFFFFF',
     fontSize: 28,
     fontWeight: '800',
+    fontFamily: 'Cairo-Regular',
   },
   footerLabel: {
     color: '#d9d9d9',
     fontSize: 12,
+    fontFamily: 'Cairo-Regular',
   },
 });
 
