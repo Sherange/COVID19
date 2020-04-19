@@ -18,8 +18,8 @@ const Card = props => {
         <Text style={[styles.label, {color: props.color}]}>{props.value}</Text>
       </View>
       <View style={styles.cardFooterRaw}>
-        <Text style={styles.footerLabel}>{props.value}</Text>
-        <Text style={styles.footerLabel}>{props.value}</Text>
+        <Text style={styles.footerLabel}>{props.source}</Text>
+        <Text style={styles.footerLabel}>{props.lastUpdate}</Text>
       </View>
     </View>
   );

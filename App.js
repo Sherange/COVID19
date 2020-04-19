@@ -13,7 +13,7 @@ import Home from './screens/Home';
 const App = () => {
   return (
     <React.Fragment>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle="light-content" backgroundColor={'#OOOOOO'} />
       <SafeAreaView style={styles.safeAreaView} />
       <Home />
     </React.Fragment>
