@@ -4,6 +4,7 @@ import {StyleSheet, View, Text, ScrollView} from 'react-native';
 import Card from '../components/Card';
 const Home = () => {
   const [totalConfrimed, setConfirmed] = useState(0);
+  const [newCases, setNewCases] = useState(0);
   const [totalActive, setActive] = useState(0);
   const [totalDaths, setDeaths] = useState(0);
   const [totalRecoverd, setRecoverd] = useState(0);
@@ -23,6 +24,7 @@ const Home = () => {
       .then(response => {
         if (response && response.data.success) {
           setConfirmed(response.data.data.local_total_cases);
+          setNewCases(response.data.data.local_new_cases);
           setActive(response.data.data.local_active_cases);
           setDeaths(response.data.data.local_deaths);
           setRecoverd(response.data.data.local_recovered);
@@ -46,6 +48,13 @@ const Home = () => {
         source={source}
         lastUpdate={lastUpdate}
         color={'#58D68D'}
+      />
+      <Card
+        title={'New Cases'}
+        value={newCases}
+        source={source}
+        lastUpdate={lastUpdate}
+        color={'#9B59B6'}
       />
       <Card
         title={'Total Active'}
