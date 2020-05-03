@@ -1,4 +1,4 @@
-package com.covid19;
+package com.appkey.covid19;
 import android.os.Bundle; 
 import com.facebook.react.ReactActivity;
 import com.zoontek.rnbootsplash.RNBootSplash;
